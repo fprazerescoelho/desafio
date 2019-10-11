@@ -1,1 +1,0 @@
-/etc/phpldapadmin/config.php
