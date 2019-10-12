@@ -7,6 +7,7 @@ Baixar o arquivo Vagrantfile e executar os comandos abaixo:
 vagrant init fprazerescoelho/desafio \
   --box-version 1
 vagrant up
+vagrant provision
 
 # Vagrant
 
