@@ -15,7 +15,7 @@ http://localhost:8081
 
 http://localhost:8080
 
-
+![wordpress](https://user-images.githubusercontent.com/56374525/66694611-a850fd00-ec8b-11e9-99e2-08b6c0773d44.PNG)
 
 # PHPLdapAdmin
 
