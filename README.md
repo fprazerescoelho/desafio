@@ -14,6 +14,8 @@ O ambiente foi criado a partir de um box Centos7, onde o mesmo foi customizado e
 
 As aplicações estão rodando a partir de instâncias do docker, sendo possível acessa-las conforme abaixo:
 
+Para ter acesso SSH basta executar vagrant ssh
+
 # Zabbix
 
 http://localhost:8081
