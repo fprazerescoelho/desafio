@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 
+
 # Atualiza SO e pacotes
 sudo yum update -y
 
@@ -57,9 +58,9 @@ sudo docker run -e WORDPRESS_DB_PASSWORD=desafio --name wordpress --link wordpre
 
 # Instala Zabbix em docker
 sudo mkdir -p /docker/mysql/zabbix/data
-docker run --name zabbix-java-gateway -t \
+sudo docker run --name zabbix-java-gateway -t \
       -d zabbix/zabbix-java-gateway:latest
-docker run --name zabbix-server-mysql -t \
+sudo docker run --name zabbix-server-mysql -t \
       -e DB_SERVER_HOST="172.17.0.2" \
       -e MYSQL_DATABASE="zabbix" \
       -e MYSQL_USER="zabbix" \
@@ -70,7 +71,7 @@ docker run --name zabbix-server-mysql -t \
       --link zabbix-java-gateway:zabbix-java-gateway \
       -p 10051:10051 \
       -d zabbix/zabbix-server-mysql:latest
-docker run --name zabbix-web-nginx-mysql -t \
+sudo docker run --name zabbix-web-nginx-mysql -t \
       -e DB_SERVER_HOST="172.17.0.2" \
       -e MYSQL_DATABASE="zabbix" \
       -e MYSQL_USER="zabbix" \
@@ -82,6 +83,6 @@ docker run --name zabbix-web-nginx-mysql -t \
       -d zabbix/zabbix-web-nginx-mysql:latest
 	  
 	# Instala PHPLDAPAdmin em docker  
-docker run -p 443:443 \
+sudo docker run -p 443:443 \
         --env PHPLDAPADMIN_LDAP_HOSTS=172.17.0.1 \
         --detach osixia/phpldapadmin:0.9.0
