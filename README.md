@@ -4,9 +4,10 @@ Baixar e instalar o Virtualbox e o Vagrant
 
 Baixar o arquivo Vagrantfile e executar os comandos abaixo:
 
-vagrant init fprazerescoelho/desafio \
-  --box-version 1
+vagrant init fprazerescoelho/desafio --box-version 1
+
 vagrant up
+
 vagrant provision
 
 # Vagrant
