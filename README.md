@@ -46,3 +46,11 @@ http://localhost:8080
 https://localhost:4443
 
 ![phpldapadmin](https://user-images.githubusercontent.com/56374525/66694621-cf0f3380-ec8b-11e9-82de-d60a18a47bd5.PNG)
+
+# Pendências
+
+Trocar a chamada do docker para docker compose
+DNS
+HA Proxy c/ letsencrypt instalado mas não em perfeito funcionamento
+Ajustar a inicialização do docker na box (hoje precisa fazer via provision)
+Tamanho da box ficou muito grande
