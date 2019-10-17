@@ -18,7 +18,7 @@ As aplicações estão rodando a partir de instâncias do docker, sendo possíve
 
 Para ter acesso SSH basta executar vagrant ssh
 
-#Integração LDAP
+# Integração LDAP
 
 Foi criada a autenticação centralizada via LDAP
 
