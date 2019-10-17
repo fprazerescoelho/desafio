@@ -18,6 +18,16 @@ As aplicações estão rodando a partir de instâncias do docker, sendo possíve
 
 Para ter acesso SSH basta executar vagrant ssh
 
+#Integração LDAP
+
+Foi criada a autenticação centralizada via LDAP
+
+Usuário: cn=felipe,dc=desafio,dc=com
+Senha: desafio
+
+![autenticacao ldap](https://user-images.githubusercontent.com/56374525/66972599-76fd7600-f06b-11e9-9130-7f97a25c0ec1.PNG)
+![usuario ldap](https://user-images.githubusercontent.com/56374525/66972627-8977af80-f06b-11e9-8ee2-60a2116b2429.PNG)
+
 # Zabbix
 
 http://localhost:8081
