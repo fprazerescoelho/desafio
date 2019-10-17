@@ -86,3 +86,6 @@ sudo docker run --name zabbix-web-nginx-mysql -t \
 sudo docker run -p 443:443 \
         --env PHPLDAPADMIN_LDAP_HOSTS=172.17.0.1 \
         --detach osixia/phpldapadmin:0.9.0
+
+# Instala haproxy
+sudo yum install -y haproxy
